@@ -23,13 +23,12 @@ Facilitar o cuidado preventivo de cães e gatos através de lembretes automátic
 
 ## 🛠️ Tecnologias
 - **Framework:** Flutter (Dart)
-- **Design:** Figma
 - **Controle de Versão:** Git & GitHub
 
 ## 📱 Como Rodar o Projeto
 ```bash
 # Clone o repositório
-git clone [https://github.com/SEU-USUARIO/patas-e-prazos.git](https://github.com/SEU-USUARIO/patas-e-prazos.git)
+git clone https://github.com/heitorfernandesbarbosa/VittaPetApp.git
 
 # Instale as dependências
 flutter pub get
