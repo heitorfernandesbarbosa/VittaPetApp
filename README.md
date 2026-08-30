@@ -6,9 +6,9 @@
 
 - **Gabrielly Lorentz — RM 565806**
 - **Giovanna Praieiro — RM 565681**
-- **Heitor Fernandes Barbosa — RM 563078**
+- **Heitor Fernandes — RM 563078**
 - **Júlia Aparicio — RM 563623**
-- **Maria Eduarda D Oliveira — RM 565386**
+- **Maria Eduarda de Oliveira — RM 565386**
 - **Nicolle Calasans — RM 564381**
 
 ## 🎯 Proposta de Valor
@@ -111,9 +111,9 @@ flutter run
 
 - **Gabrielly Lorentz:** participação no grupo, com atuação direcionada à outra atividade acadêmica desenvolvida simultaneamente.
 - **Giovanna Praieiro:** organização e revisão da documentação, estruturação das informações do CP4, revisão das funcionalidades do MVP e organização da identidade da marca.
-- **Heitor Fernandes Barbosa:** configuração inicial do projeto Flutter, estruturação do projeto, desenvolvimento inicial da aplicação e organização do repositório GitHub.
+- **Heitor Fernandes:** configuração inicial do projeto Flutter, estruturação do projeto, desenvolvimento inicial da aplicação e organização do repositório GitHub.
 - **Júlia Aparicio:** participação no grupo, com atuação direcionada à outra atividade acadêmica desenvolvida simultaneamente.
-- **Maria Eduarda D Oliveira:** aplicação da identidade visual definida no projeto e revisão/finalização da interface da aplicação.
+- **Maria Eduarda de Oliveira:** aplicação da identidade visual definida no projeto e revisão/finalização da interface da aplicação.
 - **Nicolle Calasans:** participação no grupo, com atuação direcionada à outra atividade acadêmica desenvolvida simultaneamente.
 
 ## 📌 Checkpoint 4
