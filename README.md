@@ -109,12 +109,14 @@ flutter run
 
 ## 👨‍💻 Responsabilidades dos Integrantes
 
-- **Gabrielly Lorentz:** participação no grupo, com atuação direcionada à outra atividade acadêmica desenvolvida simultaneamente.
-- **Giovanna Praieiro:** organização e revisão da documentação, estruturação das informações do CP4, revisão das funcionalidades do MVP e organização da identidade da marca.
-- **Heitor Fernandes:** configuração inicial do projeto Flutter, estruturação do projeto, desenvolvimento inicial da aplicação e organização do repositório GitHub.
-- **Júlia Aparicio:** participação no grupo, com atuação direcionada à outra atividade acadêmica desenvolvida simultaneamente.
-- **Maria Eduarda de Oliveira:** aplicação da identidade visual definida no projeto e revisão/finalização da interface da aplicação.
-- **Nicolle Calasans:** participação no grupo, com atuação direcionada à outra atividade acadêmica desenvolvida simultaneamente.
+## 👨‍💻 Responsabilidades dos Integrantes
+
+- **Gabrielly Lorentz:** pesquisa e documentação do problema e público-alvo, contribuindo para a estruturação da documentação inicial do projeto.
+- **Giovanna Praieiro:** organização e revisão da documentação, definição e detalhamento das funcionalidades do MVP e apoio no desenvolvimento inicial da aplicação em Flutter.
+- **Heitor Fernandes:** criação e configuração inicial do projeto Flutter, estruturação do projeto, desenvolvimento da tela inicial e organização do repositório GitHub.
+- **Julia Aparicio:** estruturação da proposta de valor, diferencial competitivo, pitch e informações relacionadas ao modelo de negócio.
+- **Maria Eduarda de Oliveira:** desenvolvimento da identidade visual, definição da aplicação da paleta de cores e tipografia e apoio na organização visual da interface inicial.
+- **Nicolle Calasans:** revisão e validação da documentação, conferência da coerência entre proposta, público-alvo e funcionalidades e apoio na validação final dos requisitos do projeto.
 
 ## 📌 Checkpoint 4
 
