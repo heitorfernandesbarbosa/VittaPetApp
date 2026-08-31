@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 void main() {
   runApp(const VittaPetApp());
@@ -14,12 +15,15 @@ class VittaPetApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(
-          seedColor: const Color.fromARGB(0xFF3B82F6),
-          primary: const Color.fromARGB(0xFF3B82F6),
+          seedColor: const Color(0xFF3B82F6),
+          primary: const Color(0xFF3B82F6),
           secondary: const Color(0xFF10B981),
         ),
         scaffoldBackgroundColor: const Color(0xFFF9FAFB),
         useMaterial3: true,
+
+        // Tipografia oficial do VittaPet
+        textTheme: GoogleFonts.nunitoTextTheme(),
       ),
       home: const HomePage(),
     );
@@ -51,24 +55,34 @@ class _HomePageState extends State<HomePage> {
         elevation: 0,
         title: Row(
           children: [
-            const Icon(Icons.pets, color: Color(0xFF3B82F6)),
-            const SizedBox(width: 8),
+            Image.asset(
+              'vittapet-logo.png',
+              width: 38,
+              height: 38,
+              fit: BoxFit.contain,
+            ),
+            const SizedBox(width: 10),
             const Text(
               'VittaPet',
               style: TextStyle(
                 color: Color(0xFF1F2937),
-                fontWeight: FontWeight.bold,
+                fontSize: 22,
+                fontWeight: FontWeight.w800,
               ),
             ),
           ],
         ),
         actions: [
           IconButton(
-            icon: const Icon(Icons.notifications_none, color: Color(0xFF4B5563)),
+            icon: const Icon(
+              Icons.notifications_none,
+              color: Color(0xFF4B5563),
+            ),
             onPressed: () {},
           ),
         ],
       ),
+
       body: SingleChildScrollView(
         padding: const EdgeInsets.all(16.0),
         child: Column(
@@ -76,17 +90,25 @@ class _HomePageState extends State<HomePage> {
           children: [
             // Seletor de Pet
             Container(
-              padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 4),
+              padding: const EdgeInsets.symmetric(
+                horizontal: 16,
+                vertical: 4,
+              ),
               decoration: BoxDecoration(
                 color: Colors.white,
                 borderRadius: BorderRadius.circular(12),
-                border: Border.all(color: const Color(0xFFE5E7EB)),
+                border: Border.all(
+                  color: const Color(0xFFE5E7EB),
+                ),
               ),
               child: DropdownButtonHideUnderline(
                 child: DropdownButton<String>(
                   value: _selectedPet,
                   isExpanded: true,
-                  icon: const Icon(Icons.keyboard_arrow_down, color: Color(0xFF3B82F6)),
+                  icon: const Icon(
+                    Icons.keyboard_arrow_down,
+                    color: Color(0xFF3B82F6),
+                  ),
                   items: _pets.map((String pet) {
                     return DropdownMenuItem<String>(
                       value: pet,
@@ -109,6 +131,7 @@ class _HomePageState extends State<HomePage> {
                 ),
               ),
             ),
+
             const SizedBox(height: 20),
 
             // Card Principal: Próximo Alerta
@@ -116,7 +139,10 @@ class _HomePageState extends State<HomePage> {
               padding: const EdgeInsets.all(20),
               decoration: BoxDecoration(
                 gradient: const LinearGradient(
-                  colors: [Color(0xFF3B82F6), Color(0xFF2563EB)],
+                  colors: [
+                    Color(0xFF3B82F6),
+                    Color(0xFF2563EB),
+                  ],
                   begin: Alignment.topLeft,
                   end: Alignment.bottomRight,
                 ),
@@ -136,7 +162,10 @@ class _HomePageState extends State<HomePage> {
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       Container(
-                        padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 4),
+                        padding: const EdgeInsets.symmetric(
+                          horizontal: 10,
+                          vertical: 4,
+                        ),
                         decoration: BoxDecoration(
                           color: Colors.white.withOpacity(0.2),
                           borderRadius: BorderRadius.circular(20),
@@ -150,10 +179,15 @@ class _HomePageState extends State<HomePage> {
                           ),
                         ),
                       ),
-                      const Icon(Icons.alarm, color: Colors.white),
+                      const Icon(
+                        Icons.alarm,
+                        color: Colors.white,
+                      ),
                     ],
                   ),
+
                   const SizedBox(height: 12),
+
                   const Text(
                     'Vacina V10 (Múltipla)',
                     style: TextStyle(
@@ -162,7 +196,9 @@ class _HomePageState extends State<HomePage> {
                       fontWeight: FontWeight.bold,
                     ),
                   ),
+
                   const SizedBox(height: 4),
+
                   const Text(
                     'Agendado para: Amanhã às 10:00',
                     style: TextStyle(
@@ -173,6 +209,7 @@ class _HomePageState extends State<HomePage> {
                 ],
               ),
             ),
+
             const SizedBox(height: 24),
 
             // Ações Rápidas
@@ -184,16 +221,35 @@ class _HomePageState extends State<HomePage> {
                 color: Color(0xFF1F2937),
               ),
             ),
+
             const SizedBox(height: 12),
+
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                _buildActionButton(Icons.vaccines, 'Vacinas', const Color(0xFF3B82F6)),
-                _buildActionButton(Icons.medication, 'Remédios', const Color(0xFF10B981)),
-                _buildActionButton(Icons.volunteer_activism, 'Adoção', const Color(0xFFF59E0B)),
-                _buildActionButton(Icons.badge, 'Carteirinha', const Color(0xFF8B5CF6)),
+                _buildActionButton(
+                  Icons.vaccines,
+                  'Vacinas',
+                  const Color(0xFF3B82F6),
+                ),
+                _buildActionButton(
+                  Icons.medication,
+                  'Remédios',
+                  const Color(0xFF10B981),
+                ),
+                _buildActionButton(
+                  Icons.volunteer_activism,
+                  'Adoção',
+                  const Color(0xFFF59E0B),
+                ),
+                _buildActionButton(
+                  Icons.badge,
+                  'Carteirinha',
+                  const Color(0xFF10B981),
+                ),
               ],
             ),
+
             const SizedBox(height: 24),
 
             // Lembretes Pendentes
@@ -205,20 +261,25 @@ class _HomePageState extends State<HomePage> {
                 color: Color(0xFF1F2937),
               ),
             ),
+
             const SizedBox(height: 12),
+
             _buildReminderCard(
               'Antipulgas & Carrapatos',
               'Em 5 dias • NexGard',
               Icons.shield_outlined,
               const Color(0xFF10B981),
             ),
+
             const SizedBox(height: 10),
+
             _buildReminderCard(
               'Vermífugo Periódico',
               'Em 12 dias • Drontal',
               Icons.healing_outlined,
               const Color(0xFFF59E0B),
             ),
+
             const SizedBox(height: 24),
 
             // Banner Adoção Responsável
@@ -227,12 +288,20 @@ class _HomePageState extends State<HomePage> {
               decoration: BoxDecoration(
                 color: const Color(0xFFEFF6FF),
                 borderRadius: BorderRadius.circular(12),
-                border: Border.all(color: const Color(0xFFBFDBFE)),
+                border: Border.all(
+                  color: const Color(0xFFBFDBFE),
+                ),
               ),
               child: Row(
                 children: [
-                  const Icon(Icons.favorite, color: Color(0xFFEF4444), size: 32),
+                  const Icon(
+                    Icons.favorite,
+                    color: Color(0xFFF59E0B),
+                    size: 32,
+                  ),
+
                   const SizedBox(width: 12),
+
                   Expanded(
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
@@ -254,6 +323,7 @@ class _HomePageState extends State<HomePage> {
                       ],
                     ),
                   ),
+
                   ElevatedButton(
                     onPressed: () {},
                     style: ElevatedButton.styleFrom(
@@ -264,7 +334,9 @@ class _HomePageState extends State<HomePage> {
                         borderRadius: BorderRadius.circular(8),
                       ),
                     ),
-                    child: const Text('Ver Feed'),
+                    child: const Text(
+                      'Ver Feed',
+                    ),
                   ),
                 ],
               ),
@@ -272,6 +344,8 @@ class _HomePageState extends State<HomePage> {
           ],
         ),
       ),
+
+      // Navegação inferior
       bottomNavigationBar: BottomNavigationBar(
         currentIndex: _selectedIndex,
         onTap: (index) {
@@ -283,16 +357,32 @@ class _HomePageState extends State<HomePage> {
         selectedItemColor: const Color(0xFF3B82F6),
         unselectedItemColor: const Color(0xFF9CA3AF),
         items: const [
-          BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Início'),
-          BottomNavigationBarItem(icon: Icon(Icons.calendar_month), label: 'Agenda'),
-          BottomNavigationBarItem(icon: Icon(Icons.pets), label: 'Adoção'),
-          BottomNavigationBarItem(icon: Icon(Icons.person), label: 'Perfil'),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.home),
+            label: 'Início',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.calendar_month),
+            label: 'Agenda',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.pets),
+            label: 'Adoção',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.person),
+            label: 'Perfil',
+          ),
         ],
       ),
     );
   }
 
-  Widget _buildActionButton(IconData icon, String label, Color color) {
+  Widget _buildActionButton(
+    IconData icon,
+    String label,
+    Color color,
+  ) {
     return Column(
       children: [
         Container(
@@ -302,9 +392,15 @@ class _HomePageState extends State<HomePage> {
             color: color.withOpacity(0.12),
             borderRadius: BorderRadius.circular(16),
           ),
-          child: Icon(icon, color: color, size: 28),
+          child: Icon(
+            icon,
+            color: color,
+            size: 28,
+          ),
         ),
+
         const SizedBox(height: 8),
+
         Text(
           label,
           style: const TextStyle(
@@ -317,13 +413,20 @@ class _HomePageState extends State<HomePage> {
     );
   }
 
-  Widget _buildReminderCard(String title, String subtitle, IconData icon, Color color) {
+  Widget _buildReminderCard(
+    String title,
+    String subtitle,
+    IconData icon,
+    Color color,
+  ) {
     return Container(
       padding: const EdgeInsets.all(16),
       decoration: BoxDecoration(
         color: Colors.white,
         borderRadius: BorderRadius.circular(12),
-        border: Border.all(color: const Color(0xFFE5E7EB)),
+        border: Border.all(
+          color: const Color(0xFFE5E7EB),
+        ),
       ),
       child: Row(
         children: [
@@ -333,9 +436,15 @@ class _HomePageState extends State<HomePage> {
               color: color.withOpacity(0.1),
               shape: BoxShape.circle,
             ),
-            child: Icon(icon, color: color, size: 22),
+            child: Icon(
+              icon,
+              color: color,
+              size: 22,
+            ),
           ),
+
           const SizedBox(width: 14),
+
           Expanded(
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
@@ -347,7 +456,9 @@ class _HomePageState extends State<HomePage> {
                     color: Color(0xFF1F2937),
                   ),
                 ),
+
                 const SizedBox(height: 2),
+
                 Text(
                   subtitle,
                   style: const TextStyle(
@@ -358,7 +469,11 @@ class _HomePageState extends State<HomePage> {
               ],
             ),
           ),
-          const Icon(Icons.chevron_right, color: Color(0xFF9CA3AF)),
+
+          const Icon(
+            Icons.chevron_right,
+            color: Color(0xFF9CA3AF),
+          ),
         ],
       ),
     );
