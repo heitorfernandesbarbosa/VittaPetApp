@@ -109,8 +109,6 @@ flutter run
 
 ## 👨‍💻 Responsabilidades dos Integrantes
 
-## 👨‍💻 Responsabilidades dos Integrantes
-
 - **Gabrielly Lorentz:** pesquisa e documentação do problema e público-alvo, contribuindo para a estruturação da documentação inicial do projeto.
 - **Giovanna Praieiro:** organização e revisão da documentação, definição e detalhamento das funcionalidades do MVP e apoio no desenvolvimento inicial da aplicação em Flutter.
 - **Heitor Fernandes:** criação e configuração inicial do projeto Flutter, estruturação do projeto, desenvolvimento da tela inicial e organização do repositório GitHub.
