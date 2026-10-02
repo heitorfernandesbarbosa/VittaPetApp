@@ -1,0 +1,36 @@
+name: flutter_application_1
+description: "A new Flutter project."
+
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.13.1
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.8
+
+  # Fonte Nunito para a identidade visual do VittaPet
+  google_fonts: ^8.2.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^6.0.0
+
+flutter:
+  uses-material-design: true
+
+  # Logos do VittaPet
+  assets:
+    - assets/vittapet-logo.png
+    - assets/vittapet-logo-horizontal.png
+    - assets/shih-tzu-amora.png
+    - assets/spitz-alemão-max.png
+    - assets/persa-mia.png
+    - assets/border-collie-bolt.png
