@@ -46,7 +46,7 @@ O nome **VittaPet** combina a ideia de *vita*, associada à vida, vitalidade e l
 
 ### Logotipo
 
-![Logo VittaPet](vittapet-logo.png)
+![Logo VittaPet](./assets/vittapet-logo.png)
 
 O logotipo representa a união entre cuidado, afeto e bem-estar animal. A composição com cão e gato, o coração central e a combinação das cores reforçam a proposta acolhedora e preventiva do VittaPet.
 
